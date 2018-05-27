@@ -40,6 +40,14 @@ Manual demo install:
     cp config/database-example.yml config/database.yml # and edit it
     bundle exec rake db:setup # for production, please follow deployment howto
 
+#### Installation of ruby 2.2.7 on rbenv
+
+    rbenv install 2.2.7
+    gem install bundle
+
+Mac OS `brew` users might experience the [bug](https://github.com/rbenv/ruby-build/issues/1064) and require custom install command. Takes up to **10 minutes** to build:
+
+    RUBY_CONFIGURE_OPTS=--with-readline-dir="$(brew --prefix readline)" rbenv install 2.2.7
 
 Deployment
 ----------
