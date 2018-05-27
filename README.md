@@ -34,7 +34,7 @@ Manual demo install:
 
     git clone https://github.com/internetee/rest-whois/
     cd rest-whois
-    rbenv local 2.2.6
+    rbenv local 2.2.7
     bundle install
     cp config/application-example.yml config/application.yml # and edit it
     cp config/database-example.yml config/database.yml # and edit it
